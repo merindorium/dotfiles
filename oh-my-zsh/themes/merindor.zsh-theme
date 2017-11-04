@@ -5,19 +5,19 @@ function get_venv {
 	if [ -n "$VIRTUAL_ENV" ]; then
 		PY_VERSION=`python -c 'import sys; print(".".join(map(str, sys.version_info[:2])))'`
 		VENV_NAME=`basename $VIRTUAL_ENV` 
-		echo "(%{$fg[green]%}$VENV_NAME: $PY_VERSION%{$FG[032]%})"
+		echo "%{$FG[032]%} (%{$fg[green]%}$VENV_NAME: $PY_VERSION%{$FG[032]%})"
 	else
 		echo ""
 	fi
 }
 
 # primary prompt
-PROMPT='$FG[237]------------------------------------------------------------%{$reset_color%}
-$FG[032]$(echo "${PWD%/*}" | sed -e "s;\(/.\)[^/]*;\1;g")$(echo "/${PWD##*/}")\
+PROMPT='%{$fg[green]%}$(whoami) %{$reset_color%}% at $FG[208][$(echo "${PWD%/*}" | sed -e "s;\(/.\)[^/]*;\1;g")$(echo "/${PWD##*/}")]\
 $(get_venv)\
-$(git_prompt_info)\
+ $(git_prompt_info)
 $FG[105]%(!.#.»)%{$reset_color%} '
-PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
+#%{$reset_color%} '
+PROMPT2='%{$fg[red]%}\%{$reset_color%}'
 RPS1='${return_code}'
 
 

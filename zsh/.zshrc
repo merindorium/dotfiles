@@ -58,7 +58,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 #Autojump
-. /usr/share/autojump/autojump.sh
+. /usr/share/autojump/autojump.zsh
 
 #Autosuggest highlight
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'
