@@ -134,6 +134,7 @@ bindsym $mod+Shift+0 move container to workspace $WS10
 bindsym $mod+Shift+minus move container to workspace $WS11
 bindsym $mod+Shift+plus move container to workspace $WS12
 
+bindsym $mod+m move workspace to output down
 #Workspace assign
 assign [class="Evince"] $WS9
 assign [class="fbreader"] $WS9
