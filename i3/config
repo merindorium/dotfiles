@@ -1,18 +1,18 @@
 set $mod Mod1
 
 # ASSIGN WORKSPACE VARIABLES
-set $WS1 
-set $WS2 
-set $WS3 
-set $WS4 
-set $WS5 
-set $WS6 6:office
-set $WS7 
-set $WS8 
-set $WS9 
-set $WS10 
-set $WS11 misc
-set $WS12 misc2
+set $WS1 1:
+set $WS2 2:
+set $WS3 3:
+set $WS4 4:
+set $WS5 5:
+set $WS6 6:
+set $WS7 7:
+set $WS8 8:
+set $WS9 9:
+set $WS10 10:
+set $WS11 11:
+set $WS12 12:
 
 
 #EXEC ON START
@@ -34,7 +34,7 @@ bindsym $mod+z move workspace to output left
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango: xos4 Terminus 12 
+font pango: SauceCodePro Nerd Font 10 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -43,7 +43,7 @@ font pango: xos4 Terminus 12
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt 
+bindsym $mod+Return exec termite 
 
 # kill focused window
 bindsym $mod+Shift+q kill
