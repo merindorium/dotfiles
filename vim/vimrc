@@ -11,6 +11,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'nightsense/simplifysimplify'
 Plugin 'joshdick/onedark.vim'
+Plugin 'junegunn/fzf'
+Plugin 'chrisbra/Colorizer'
+
 call vundle#end()  
 
 filetype plugin indent on
