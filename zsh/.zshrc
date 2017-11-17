@@ -66,6 +66,7 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'
 #Disable virtualenv prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
+export EDITOR='vim'
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -92,3 +93,5 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
