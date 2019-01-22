@@ -1,0 +1,16 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshrc:
+      force: true
+      path: zsh/zshrc
+    ~/.vimrc:
+      relink: true
+      path: vim/vimrc
+    ~/.oh-my-zsh/themes/merindor.zsh-theme:
+      force: true
+      path: oh-my-zsh/themes/merindor.zsh-theme
